@@ -7,6 +7,7 @@ body{
     font: 1.6rem sans-serif; 
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    line-height: 1.6;
 }
 h1,h2,h3,h4,ul,ol,p{
     margin: 0;
@@ -22,6 +23,8 @@ img{
 }
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 /* Theme */
 
@@ -39,17 +42,56 @@ h1 img{
 }
 nav{
     background-color: #fff;
+    text-align: center;
 }
 nav ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    width: 60vw;
+    margin: 0 auto 0 auto;
 }
+
 section{
+    position: relative;
     width: 80rem;
-    height: 30rem;
+    height: 40rem;
     background-color: #fff;
+    margin: 5rem auto 5rem auto;
 }
-section figure img{
-    height: 60px;
-    width: 80px;
+section figure {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section figure figcaption h2{
+   font-size: medium;
+}
+section figure figcaption h2,section figure figcaption p{
+    padding-bottom: 10px;
+}
+
+section figure figcaption li{
+    padding-bottom: 5px;
+}
+section button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    padding: 1rem;
+    background-color:#D14600 ;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+footer{
+    width: 100vw;
+    text-align: center;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+
+}
+span{
+    margin: 0;
+    padding: 0;
 }
