@@ -68,7 +68,7 @@ section{
     width: 80rem;
     height: 40rem;
     background-color: #fff;
-    margin: 5rem auto 5rem auto;
+    margin: 8rem auto  auto;
     border-radius: 0.313rem;
     padding: 0.313rem;
 }
@@ -77,7 +77,8 @@ section figure {
     grid-template-columns: repeat(2,1fr);
 }
 section figure figcaption h2{
-   font-size: medium;
+   font-size: large;
+   font-weight: 700;
    margin-top: 1rem;
 }
 section figure figcaption h2,section figure figcaption p{
