@@ -47,16 +47,30 @@ nav{
 nav ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 60vw;
+    width: 50vw;
     margin: 0 auto 0 auto;
+    padding: 10px 0;
 }
+nav ul li{
+    text-transform: uppercase;   
+}
+nav ul li span{
+    position: relative;
+}
+nav ul li p{
+    display: inline-block;
+    position: relative;
+    top : -6px;
 
+}
 section{
     position: relative;
     width: 80rem;
     height: 40rem;
     background-color: #fff;
     margin: 5rem auto 5rem auto;
+    border-radius: 5px;
+    padding: 5px;
 }
 section figure {
     display: grid;
@@ -64,6 +78,7 @@ section figure {
 }
 section figure figcaption h2{
    font-size: medium;
+   margin-top: 1rem;
 }
 section figure figcaption h2,section figure figcaption p{
     padding-bottom: 10px;
@@ -77,11 +92,16 @@ section button{
     bottom: 10px;
     right: 10px;
     display: flex;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color:#D14600 ;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
+}
+section button p{
+    position: relative;
+    top: 6px;
+    left: 6px;
 }
 footer{
     width: 100vw;
@@ -89,6 +109,7 @@ footer{
     background-color: #f1f1f1;
     position: fixed;
     bottom: 0;
+    padding: 1rem 0;
 
 }
 span{
