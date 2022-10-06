@@ -50,15 +50,13 @@ nav{
 nav ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 50vw;
+    width: 70vw;
     margin: 0 auto 0 auto;
 }
 nav ul li a{
     text-transform: uppercase; 
-    display: inline-block; 
-    margin :1rem 0 ; 
-    padding: 1rem;
-    border-radius: 0.625rem;
+    display: inline-block;  
+    padding: 1rem 0.5rem 1rem 0.5rem;
 }
 nav ul li span{
     position: relative;
@@ -114,7 +112,7 @@ section button span{
     position: relative;
     top: 0.2rem;
 }
-section button   div{
+section button div{
     display: inline;
     position: relative;
     bottom: 0.5rem;
@@ -131,10 +129,12 @@ footer{
 }
 a:hover{
     cursor: pointer;
+    background-color: #f1f1f1;  
+    transition: 0.5s background-color ease-in-out;
+}
+button:hover{
+    cursor: pointer;
     filter: hue-rotate(90deg);
-    background-color: #D14600;
-    color: #fff;
-    transition: 0.5s background-color, color ease-in-out;
 }
 span{
     margin: 0;
@@ -147,9 +147,9 @@ span{
     nav ul{
         padding: 0;
         width: 100vw;
-        text-align: left;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
+        text-align: center;
+        grid-template-columns: repeat(3,1fr);
+
     }
     nav ul li a{
         padding: 0.5rem;
@@ -185,6 +185,20 @@ span{
     }
     footer{
         padding: 1rem 3rem 0 3rem;
+    }
+    a:hover,button:hover{
+        cursor: pointer;
+        filter: none;
+        background-color: inherit;
+        color: initial;
+        transition: none;
+    }
+    @media screen and (max-width:700px) {
+        nav ul{
+            grid-template-columns: repeat(1,1fr);
+            text-align: left;
+        }
+        
     }
     
 }
